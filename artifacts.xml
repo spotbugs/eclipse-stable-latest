@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/home/travis/build/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse-stable-latest/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1551443204199'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='3.1.13.201903011226-5013623'>
+      <properties size='3'>
+        <property name='artifact.size' value='5609467'/>
+        <property name='download.size' value='5609467'/>
+        <property name='download.md5' value='112882ef6587055b20f79563d625e2ac'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='3.1.13.201903011226-5013623'>
+      <properties size='4'>
+        <property name='artifact.size' value='7987'/>
+        <property name='download.size' value='7987'/>
+        <property name='download.md5' value='cc20f6e133e8a91f97bd244a0024db10'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
